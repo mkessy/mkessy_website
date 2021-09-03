@@ -1,0 +1,10 @@
+<div class="mx-auto flex justify-start space-x-2">
+    {% for item in site.data.navigation %}
+    <div>
+
+        <a href="{{ item.link }}" {% if page.url==item.link %}class="current"{% endif %}>
+            {{ item.name }}
+        </a>
+    </div>
+        {% endfor %}
+</div>

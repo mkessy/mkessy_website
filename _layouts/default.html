@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <title>{{ page.title }}</title>
   </head>
-  <body>
+  <body class="antialiased font-sans bg-white">
     <div>
-      <div class="w-1/2 mx-auto">
-        <nav>{% include navigation.html %}</nav>
-        <div class="prose pt-20">{{ content }}</div>
+      <div class="max-w-screen-sm mx-auto">
+        <nav class="mt-4 border-b-2 border-t-2 border-dashed">
+          {% include navigation.html %}
+        </nav>
+        <div class="mt-10">{{ content }}</div>
       </div>
     </div>
   </body>

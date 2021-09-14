@@ -1,5 +1,19 @@
 ---
 layout: default
-title: Home
+title: Blog
 ---
-    <h1>{{ "Hello Mepuka Website!" | downcase }}</h1>
+
+<h1 class="font-semibold text-gray-500 mb-4">Latest Posts</h1>
+
+<div>
+  <div class="grid grid-cols-2 gap-x-5 gap-y-5 auto-cols-fr">
+    {% for post in site.posts %}
+    <div class="truncate">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </div>
+    <div class="justify-self-end font-normal text-gray-600">
+      {{ post.date | date: '%-d %B %Y'}}
+    </div>
+    {% endfor %}
+  </div>
+</div>

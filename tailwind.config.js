@@ -7,7 +7,18 @@ module.exports = {
   ],
   darkMode: false,
   theme: {
-    extend: {},
+    colors: {
+      curiosity: {
+        lightest: "#EFFFCD",
+        light: "#DCE9BE",
+        dirt: "#555152",
+        magenta: "#2E2633",
+        red: "#99173C",
+      },
+    },
+    minWidth: {
+      full: "640px",
+    },
   },
   variants: {},
   plugins: [require("@tailwindcss/typography")],

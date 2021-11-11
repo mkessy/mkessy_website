@@ -1,8 +1,8 @@
 
-<div class="font-black text-4xl">mepuka kessy</div>
+<div class="font-black text-4xl text-curiosity-dirt">mepuka kessy</div>
 <div class="mt-2.5 mb-2.5 mx-auto flex justify-start space-x-2">
     {% for item in site.data.navigation %}
-    <div>
+    <div class="text-curiosity-dirt hover:text-curiosity-magenta">
 
         <a href="{{ item.link }}" {% if page.url==item.link %}class="current"{% endif %}>
             {{ item.name }}

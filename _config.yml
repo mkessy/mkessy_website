@@ -1,2 +1,11 @@
 plugins:
   - jekyll-postcss
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+destination: ../mkessy.github.io/
+domain: mkessy.github.io
+url: https://mkessy.github.io
